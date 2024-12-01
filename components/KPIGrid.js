@@ -1,6 +1,6 @@
-import { SimpleGrid, Box, Text } from "@chakra-ui/react";
+import {SimpleGrid, Box, Text} from "@chakra-ui/react";
 
-export default function KPIGrid({ data }) {
+export default function KPIGrid({data}) {
     const totalSales = data.sales.reduce((acc, cur) => acc + cur.value, 0);
     const totalExpenses = data.expenses.reduce((acc, cur) => acc + cur.value, 0);
     const netProfit = totalSales - totalExpenses;
