@@ -41,8 +41,8 @@ The **Business Performance Dashboard** is a dynamic and responsive web applicati
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/donphelix/dashboard.git
-   cd dashboard
+   git clone https://github.com/donphelix/perfomance-dashboard.git
+   cd perfomance-dashboard
    
 2. Install project dependencies:
    ```
