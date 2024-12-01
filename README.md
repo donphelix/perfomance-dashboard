@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Business Performance Dashboard
 
-## Getting Started
+The **Business Performance Dashboard** is a dynamic and responsive web application built to visualize key business metrics, including sales, expenses, and transactions. Using modern technologies like **Next.js**, **Chakra UI**, **Recharts**, and **React Query**, this dashboard provides insightful charts, KPI cards, and a paginated transaction table to help stakeholders monitor performance effectively.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Dashboard Overview
+- **KPI Cards**:
+    - Display key metrics such as Total Sales, Total Expenses, Net Profit, and Active Users.
+    - Dynamically updates based on mock data.
+    - Designed with **Chakra UI’s SimpleGrid** for responsiveness.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Data Visualizations
+- **Line Chart**:
+    - Displays sales and expense trends over the last 12 months.
+    - Built using **Recharts**.
+- **Bar Chart**:
+    - Visualizes revenue distribution by region (North America, Europe, Asia).
+- **Pie Chart**:
+    - Shows a percentage breakdown of expenses by category (Marketing, Operations, HR).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Transaction Log
+- **Paginated Table**:
+    - Displays recent transactions with columns for:
+        - Date, Transaction ID, Amount, Type (Sale/Expense), and Status (Completed/Pending).
+    - Includes pagination controls for seamless navigation between pages.
 
-## Learn More
+### Responsive Design
+- Fully mobile-friendly using **Chakra UI** and **Tailwind CSS**.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation and Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+- Ensure **Node.js** (v14 or higher) and **npm** are installed on your system.
+- Install **Git** if you plan to clone the repository.
 
-## Deploy on Vercel
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/donphelix/dashboard.git
+   cd dashboard
+   
+2. Install project dependencies:
+   ```
+   npm install
+   
+3. Run the Application
+   ```
+   npm run dev
+Open your browser and visit: http://localhost:3000.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Future Enhancements
+Dynamic Filters:
+Add filters for date ranges, regions, and categories.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dark Mode:
+Implement a light/dark theme toggle using Chakra UI’s theming.
+
+Drill-Down Charts:
+Allow users to click on chart sections (e.g., region, category) for detailed data views.
+
+Real-Time Updates:
+Simulate live data updates for transactions and metrics.
+
+Export Data:
+Enable exporting transaction data and charts to CSV or PDF.
+
+## Project Structure
+  ```
+  dashboard/
+  ├── app/                        # Next.js app router
+  │   ├── layout.js               # Root layout with Chakra UI and React Query providers
+  │   └── dashboard/page.js       # Main dashboard page
+  ├── components/                 # Reusable UI components
+  │   ├── KPIGrid.js              # KPI cards for metrics
+  │   ├── ChartsSection.js        # Line, Bar, Pie charts
+  │   ├── TransactionTable.js     # Paginated transaction table
+  ├── utils/                      # Helper functions and mock data
+  │   ├── mockData.js             # Generates mock sales, expense, and transaction data
+  ├── styles/                     # Global styles
+  │   └── globals.css             # TailwindCSS global styles
+  ├── public/                     # Static assets (e.g., images, icons)
+  ├── README.md                   # Project documentation
+  ├── package.json                # Dependencies and scripts
+  └── next.config.js              # Next.js configuration
