@@ -2,7 +2,7 @@ import {faker} from "@faker-js/faker";
 
 // Generate sales data for the last 12 months
 function generateSalesData() {
-    return Array.from({length: 12}, (_, i) => ({
+    return Array.from({length: 30}, (_, i) => ({
         month: `Month ${i + 1}`,
         value: faker.number.int({min: 1000, max: 5000}),
     }));
