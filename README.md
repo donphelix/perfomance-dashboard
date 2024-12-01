@@ -43,24 +43,28 @@ The **Business Performance Dashboard** is a dynamic and responsive web applicati
    ```bash
    git clone https://github.com/donphelix/dashboard.git
    cd dashboard
+   
+2. Install project dependencies:
+   ```
+   npm install
+   
+3. Run the Application
+   ```
+   npm run dev
+Open your browser and visit: http://localhost:3000.
 
-## Getting Started
+## Future Enhancements
+Dynamic Filters:
+Add filters for date ranges, regions, and categories.
 
-First, run the development server:
+Dark Mode:
+Implement a light/dark theme toggle using Chakra UI’s theming.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Drill-Down Charts:
+Allow users to click on chart sections (e.g., region, category) for detailed data views.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Real-Time Updates:
+Simulate live data updates for transactions and metrics.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
+Export Data:
+Enable exporting transaction data and charts to CSV or PDF.
