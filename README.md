@@ -68,3 +68,22 @@ Simulate live data updates for transactions and metrics.
 
 Export Data:
 Enable exporting transaction data and charts to CSV or PDF.
+
+## Project Structure
+  ```
+  dashboard/
+  ├── app/                        # Next.js app router
+  │   ├── layout.js               # Root layout with Chakra UI and React Query providers
+  │   └── dashboard/page.js       # Main dashboard page
+  ├── components/                 # Reusable UI components
+  │   ├── KPIGrid.js              # KPI cards for metrics
+  │   ├── ChartsSection.js        # Line, Bar, Pie charts
+  │   ├── TransactionTable.js     # Paginated transaction table
+  ├── utils/                      # Helper functions and mock data
+  │   ├── mockData.js             # Generates mock sales, expense, and transaction data
+  ├── styles/                     # Global styles
+  │   └── globals.css             # TailwindCSS global styles
+  ├── public/                     # Static assets (e.g., images, icons)
+  ├── README.md                   # Project documentation
+  ├── package.json                # Dependencies and scripts
+  └── next.config.js              # Next.js configuration
