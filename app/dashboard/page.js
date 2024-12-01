@@ -2,7 +2,7 @@
 
 import {VStack, Heading} from "@chakra-ui/react";
 import ChartsSection from "@/components/ChartsSection";
-// import TransactionTable from "@/components/TransactionTable";
+import TransactionTable from "@/components/TransactionTable";
 import {generateMockData} from "@/utils/mockData";
 import KPIGrid from "@/components/KPIGrid";
 
@@ -20,7 +20,7 @@ export default function DashboardPage() {
                 revenueByRegion={revenueByRegion}
                 expensesByCategory={expensesByCategory}
             />
-            {/*<TransactionTable transactions={transactions} />*/}
+            <TransactionTable transactions={transactions}/>
         </VStack>
     );
 }
