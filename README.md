@@ -71,7 +71,7 @@ Enable exporting transaction data and charts to CSV or PDF.
 
 ## Project Structure
   ```
-  dashboard/
+   dashboard/
   ├── app/                        # Next.js app router
   │   ├── layout.js               # Root layout with Chakra UI and React Query providers
   │   └── dashboard/page.js       # Main dashboard page
